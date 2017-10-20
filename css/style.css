@@ -1,0 +1,68 @@
+/* Detalles generales del menu 
+color de fondo : gris claro
+color active: gris mas oscuro 
+fuente sans serif 
+active: boton de color ; */
+
+/*Primero aplicar la fuente a todo el body*/
+
+body{
+	font-family: sans-serif;
+}
+
+/*
+ul{
+	// outline: 1px solid yellow; //  este codigo me 
+	ayuda a visualizar el espacio que tengo disponible 
+	y como se esta comportando cada cuerpo, en este caso ul
+
+}   como li tiene unas viñetas por defecto lo primero que hare 
+será quitarselas */
+
+ul{
+	/*outline: 1px solid yellow; */
+	list-style: none; /* con esto elimino el estilo de lista y saco las viñetas*/ 
+	margin: 0px; 
+	padding: 0px;
+	width: 180px; 
+	line-height: 24px; 
+}	
+
+li{
+	/*outline: 1px solid red;*/
+	background-color: #F3F2F2; 
+}
+
+a{
+	/*outline: 1px solid green; */
+	display: block;
+	text-decoration: none; /*borro el subrayado*/
+	color: #000;
+	padding-left: 9px;
+}
+
+a:hover {
+	cursor: pointer;
+	background-color: #DFD6D6; 
+}
+
+a:active{
+	background: #524B4B; 
+	color: #FFF;
+}
+ul li:first-child{
+	background-color: #F6DB27;
+}
+
+ul li:first-child a{
+	color: #fff;
+}
+
+ul li:first-child a:hover{
+	color: #000;
+}
+
+ul li:first-child a:active{
+	color: #fff;
+}
+
